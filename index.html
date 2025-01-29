@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orido - Tailwind CSS</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-900">
+  <!-- Header Section -->
+  <header class="bg-white shadow-md">
+    <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16" />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+              <li><a>Item 1</a></li>
+              <li>
+                <a>Parent</a>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </li>
+              <li><a>Item 3</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost text-xl">daisyUI</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a>Item 1</a></li>
+            <li>
+              <details>
+                <summary>Parent</summary>
+                <ul class="p-2">
+                  <li><a>Submenu 1</a></li>
+                  <li><a>Submenu 2</a></li>
+                </ul>
+              </details>
+            </li>
+            <li><a>Item 3</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <a class="btn">Button</a>
+        </div>
+      </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-screen" style="background-image: url('https://marketifythemes.net/html/orido/images/slider/slider-1.jpg');">
+    <div class="hero bg-base-200 min-h-screen">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+            class="max-w-sm rounded-lg shadow-2xl" />
+          <div>
+            <h1 class="text-5xl font-bold">Box Office News!</h1>
+            <p class="py-6">
+              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+              quasi. In deleniti eaque aut repudiandae et a id nisi.
+            </p>
+            <button class="btn btn-primary">Get Started</button>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section>
+  <div class="hero bg-base-200 min-h-screen">
+    <div class="hero-content flex-col lg:flex-row">
+      <img
+        src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
+        class="max-w-sm rounded-lg shadow-2xl" />
+      <div>
+        <h1 class="text-5xl font-bold">Box Office News!</h1>
+        <p class="py-6">
+          Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+          quasi. In deleniti eaque aut repudiandae et a id nisi.
+        </p>
+        <button class="btn btn-primary">Get Started</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Services Section -->
+  <section class="py-16 bg-white">
+    <div class="container mx-auto px-6 md:px-12 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <!-- Service 1 -->
+        <div class="p-6 border rounded-lg shadow hover:shadow-lg transition">
+          <div class="text-orange-500 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2a10 10 0 00-6.65 17.32c.23.19.5.34.77.48L12 22l5.88-2.21c.27-.14.54-.29.77-.48A10 10 0 0012 2z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-semibold mb-2">Web Development</h3>
+          <p class="text-gray-600">Build modern, responsive, and high-performance websites tailored to your needs.</p>
+        </div>
+        <!-- Service 2 -->
+        <div class="p-6 border rounded-lg shadow hover:shadow-lg transition">
+          <div class="text-orange-500 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2a10 10 0 00-6.65 17.32c.23.19.5.34.77.48L12 22l5.88-2.21c.27-.14.54-.29.77-.48A10 10 0 0012 2z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-semibold mb-2">Graphic Design</h3>
+          <p class="text-gray-600">Design creative and visually appealing content for branding and marketing.</p>
+        </div>
+        <!-- Service 3 -->
+        <div class="p-6 border rounded-lg shadow hover:shadow-lg transition">
+          <div class="text-orange-500 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2a10 10 0 00-6.65 17.32c.23.19.5.34.77.48L12 22l5.88-2.21c.27-.14.54-.29.77-.48A10 10 0 0012 2z" />
+            </svg>
+          </div>
+          <h3 class="text-2xl font-semibold mb-2">SEO Optimization</h3>
+          <p class="text-gray-600">Optimize your website for search engines to improve visibility and traffic.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Portfolio Section -->
+<section class="py-16 bg-gray-100">
+    <div class="container mx-auto px-6 md:px-12 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Our Portfolio</h2>
+      <p class="text-gray-600 mb-12">Take a look at some of our creative works that we are proud to showcase.</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+        <!-- Portfolio Item 1 -->
+        <div class="relative group overflow-hidden rounded-lg shadow-lg">
+          <img src="https://marketifythemes.net/html/orido/images/portfolio/portfolio-1.jpg" alt="Portfolio 1" class="w-full h-60 object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <a href="#" class="text-white text-lg font-semibold">View Project</a>
+          </div>
+        </div>
+        <!-- Portfolio Item 2 -->
+        <div class="relative group overflow-hidden rounded-lg shadow-lg">
+          <img src="https://marketifythemes.net/html/orido/images/portfolio/portfolio-2.jpg" alt="Portfolio 2" class="w-full h-60 object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <a href="#" class="text-white text-lg font-semibold">View Project</a>
+          </div>
+        </div>
+        <!-- Portfolio Item 3 -->
+        <div class="relative group overflow-hidden rounded-lg shadow-lg">
+          <img src="https://marketifythemes.net/html/orido/images/portfolio/portfolio-3.jpg" alt="Portfolio 3" class="w-full h-60 object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <a href="#" class="text-white text-lg font-semibold">View Project</a>
+          </div>
+        </div>
+        <!-- Portfolio Item 4 -->
+        <div class="relative group overflow-hidden rounded-lg shadow-lg">
+          <img src="https://marketifythemes.net/html/orido/images/portfolio/portfolio-4.jpg" alt="Portfolio 4" class="w-full h-60 object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <a href="#" class="text-white text-lg font-semibold">View Project</a>
+          </div>
+        </div>
+        <!-- Portfolio Item 5 -->
+        <div class="relative group overflow-hidden rounded-lg shadow-lg">
+          <img src="https://marketifythemes.net/html/orido/images/portfolio/portfolio-5.jpg" alt="Portfolio 5" class="w-full h-60 object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <a href="#" class="text-white text-lg font-semibold">View Project</a>
+          </div>
+        </div>
+        <!-- Portfolio Item 6 -->
+        <div class="relative group overflow-hidden rounded-lg shadow-lg">
+          <img src="https://marketifythemes.net/html/orido/images/portfolio/portfolio-6.jpg" alt="Portfolio 6" class="w-full h-60 object-cover">
+          <div class="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
+            <a href="#" class="text-white text-lg font-semibold">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-6 md:px-12 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">What Our Clients Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Testimonial 1 -->
+        <div class="p-6 border rounded-lg shadow">
+          <p class="text-gray-600 italic mb-4">"Orido is fantastic! Their team delivered high-quality work on time and exceeded our expectations."</p>
+          <h3 class="text-lg font-semibold text-gray-800">John Doe</h3>
+          <span class="text-gray-500 text-sm">CEO, Creative Inc.</span>
+        </div>
+        <!-- Testimonial 2 -->
+        <div class="p-6 border rounded-lg shadow">
+          <p class="text-gray-600 italic mb-4">"Highly professional and creative team. They brought our ideas to life beautifully."</p>
+          <h3 class="text-lg font-semibold text-gray-800">Jane Smith</h3>
+          <span class="text-gray-500 text-sm">Marketing Manager, Brandify</span>
+        </div>
+        <!-- Testimonial 3 -->
+        <div class="p-6 border rounded-lg shadow">
+          <p class="text-gray-600 italic mb-4">"We love the work they did for our website and branding. Highly recommend them!"</p>
+          <h3 class="text-lg font-semibold text-gray-800">Sarah Lee</h3>
+          <span class="text-gray-500 text-sm">Founder, Design Studio</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <!-- Footer Section -->
+<footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6 md:px-12 text-center">
+      <p class="mb-4">© 2025 Orido. All rights reserved.</p>
+      <nav class="flex justify-center space-x-6">
+        <a href="#" class="text-gray-400 hover:text-white">Home</a>
+        <a href="#" class="text-gray-400 hover:text-white">About</a>
+        <a href="#" class="text-gray-400 hover:text-white">Portfolio</a>
+        <a href="#" class="text-gray-400 hover:text-white">Blog</a>
+        <a href="#" class="text-gray-400 hover:text-white">Contact</a>
+      </nav>
+    </div>
+  </footer>
+  
+</body>
+</html>
