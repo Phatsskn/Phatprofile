@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phatarasaya Profile</title>
+  <title>Pattarasaya Profile</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.min.css" rel="stylesheet" type="text/css" />
-  
+  <script src="js/script.js"></script>
+
   <style>
   :root {
     --p: #E42278;
     --s: #ED7BAB;
-    --a: #4BC7BC;
+    --a: #9979C1;
     --n: #F5D3DD;
     --b1: #F9F9F9;
     --t: #0D111A;
@@ -34,6 +35,9 @@
     font-style: italic;
     color: var(--p);
   }
+  h6{
+    font-family: "Poppins", serif;
+  }
   .text-p{
     color: var(--p)
   }
@@ -43,7 +47,9 @@
   .bg-s{
     background-color: var(--s);
   }
-
+  .bg-a{
+    background-color: var(--a);
+  }
   .bg-n{
     background-color: var(--n);
   }
@@ -96,6 +102,21 @@
       font-style: normal;
       color: var(--p);
     }
+
+  .badge-p{
+    color: var(--b1);
+    background-color: var(--p);
+    border-color: var(--p);
+    font-size: 0.7rem;
+  }
+    .linkout{
+      padding-right:1.5rem;
+      background: var(--p) url('images/top-arrow.svg') no-repeat 95% center;
+    }
+  .badge-s{
+    color: var(--s);
+    border-color: var(--s);
+  }
 
   </style>
 </head>
@@ -164,14 +185,13 @@
 </header>
 
 <!-- Hero Section -->
+<a name="home"></a>
 <section class="h-screen">
     <div class="hero min-h-screen">
         <div class="mt-16 hero-content flex-col lg:flex-row-reverse">
           <img
             src="https://marketifythemes.net/html/orido/img/hero/1.jpg"
             class="max-w-sm w-3/5 lg:w-1/2" />
-          
-          <img class="absolute inset-x-50 bottom-0" src="images/down_button.svg" />
 
           <div class="w-full md:w-1/2 p-4">
             <h1 class="text-4xl lg:text-5xl">Pattarasaya <img class="inline-block" src="images/hi.svg" /></h1>
@@ -195,12 +215,13 @@
 </section>
   
 <!-- About Section -->
+<a name="about"></a>
 <section>
   <div class="hero min-h-screen bg-s">
     <div class="hero-content flex-col lg:flex-row">
         <div class="w-full h-full md:w-1/2 p-0 md:p-4">
           <div class="exp w-[90%] md:w-[70%] h-3/5 md:h-3/4">
-            <h3 class="exp-year mt-[-4rem] mb-[-9rem] md:mt-[-6rem] md:mb-[-6rem]">8</h3>
+            <h3 class="exp-year mt-[-4rem] mb-[-9rem] md:mt-[-6rem] md:mb-[-6rem]" id="year-exp"></h3>
             <p class="exp-text">Years of Experience</p>
 						<h2 class="exp-slogan text-3xl md:text-4xl">All Funnel Marketer</h2>
           </div>
@@ -221,8 +242,8 @@
           <img class="ml-0 mt-6 md:ml-6 md:mt-0" src="images/signature.svg" />
         </div>
         <div class="badge text-p badge-outline">INFJ</div>
-        <div class="badge text-p badge-outline">Dog Lover</div>
-        <div class="badge text-p badge-outline">Healthy</div>
+        <div class="badge text-p badge-outline">Dog Person</div>
+        <div class="badge text-p badge-outline">Health Conscious</div>
 
       </div>
     </div>
@@ -230,11 +251,12 @@
 </section>
 
 <!-- Expertise -->
+<a name="expertise"></a>
 <section>
   <div class="hero min-h-screen">
       <div class="hero-content flex-col lg:flex-row">
         <div class="w-full md:w-1/2 p-4">
-          <h2 class="text-4xl lg:text-5xl">My Expert Areas</h2>
+          <h2 class="text-4xl lg:text-5xl">Areas of Expertise</h2>
           
           <p class="py-6">
             You can express yourself however you want and whenever you want, for free. <br />
@@ -282,239 +304,326 @@
             </div>
           </div>
 
-          
-
-             
         </div>
 
       </div>
     </div>
 </section>
 
-<section class="bg-cover bg-center h-80 items-center">
-  <div class="stats shadow">
-    <div class="stat">
-      <div class="stat-figure text-secondary">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          class="inline-block h-8 w-8 stroke-current">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-        </svg>
-      </div>
-      <div class="stat-title">Downloads</div>
-      <div class="stat-value">31K</div>
-      <div class="stat-desc">Jan 1st - Feb 1st</div>
-    </div>
-  
-    <div class="stat">
-      <div class="stat-figure text-secondary">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          class="inline-block h-8 w-8 stroke-current">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
-        </svg>
-      </div>
-      <div class="stat-title">New Users</div>
-      <div class="stat-value">4,200</div>
-      <div class="stat-desc">↗︎ 400 (22%)</div>
-    </div>
-  
-    <div class="stat">
-      <div class="stat-figure text-secondary">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          class="inline-block h-8 w-8 stroke-current">
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4"></path>
-        </svg>
-      </div>
-      <div class="stat-title">New Registers</div>
-      <div class="stat-value">1,200</div>
-      <div class="stat-desc">↘︎ 90 (14%)</div>
+<!-- Timeline -->
+<a name="timeline"></a>
+<section>
+  <div class="hero h-full">
+    <div class="flex w-full flex-col lg:flex-row px-2 md:px-28">
+        <div class="card h-full py-16 bg-a rounded-box grid flex-1 place-items-center">
+          <h2 class="text-4xl lg:text-5xl text-b1 mb-8">Timeline</h2>
+            <div class="place-self-start">
+            <ul class="timeline timeline-vertical text-sm">
+              <li>
+                <div class="timeline-start">2022</div>
+                <div class="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="var(--b1)"
+                    class="h-5 w-5">
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div class="timeline-end timeline-box">BDMS</div>
+                <hr />
+              </li>
+              <li>
+                <hr />
+                <div class="timeline-start">2019</div>
+                <div class="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-5 w-5">
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div class="timeline-end timeline-box">EV Battery</div>
+                <hr />
+              </li>
+              <li>
+                <hr />
+                <div class="timeline-start">2017</div>
+                <div class="timeline-middle">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                    class="h-5 w-5">
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                      clip-rule="evenodd" />
+                  </svg>
+                </div>
+                <div class="timeline-end timeline-box">Jaspal Group</div>
+                <hr />
+              </li>
+              <li>
+                <hr />
+                <div class="timeline-start">2017</div>
+                <div class="timeline-middle">
+                  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"
+                  class="h-5 w-5">
+
+                  <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                  fill="currentColor" stroke="none">
+                  <path d="M2458 4499 c-37 -5 -102 -22 -145 -38 -108 -40 -2170 -1027 -2211
+                  -1058 -50 -38 -90 -99 -98 -150 -16 -110 49 -193 222 -280 l114 -58 0 -466 0
+                  -466 -48 -31 c-104 -67 -154 -196 -122 -312 16 -59 67 -129 115 -158 24 -15
+                  45 -31 45 -36 0 -7 -243 -786 -257 -822 -4 -12 57 -14 367 -14 332 0 371 2
+                  366 15 -16 42 -256 812 -256 822 0 6 13 16 29 22 96 41 164 200 132 316 -17
+                  66 -66 133 -121 167 l-50 31 0 413 c0 228 3 414 7 414 4 0 74 -32 155 -72
+                  l148 -71 0 -621 c0 -615 0 -621 21 -656 33 -54 254 -268 354 -342 300 -223
+                  648 -364 1025 -415 152 -20 458 -20 610 0 382 52 720 189 1025 414 109 81 334
+                  304 358 355 15 33 17 89 17 647 l0 612 365 179 c201 98 383 193 405 210 56 44
+                  94 127 87 185 -9 62 -39 116 -86 156 -60 52 -2141 1065 -2236 1089 -90 23
+                  -246 32 -337 19z m301 -204 c30 -9 446 -208 925 -442 479 -234 953 -466 1052
+                  -514 100 -49 185 -96 188 -105 4 -10 -1 -25 -11 -37 -18 -20 -723 -372 -769
+                  -383 -13 -3 -28 -12 -34 -19 -6 -7 -308 -157 -673 -333 -491 -238 -677 -323
+                  -721 -331 -84 -15 -210 -13 -285 4 -42 10 -307 132 -765 352 -386 185 -744
+                  356 -796 381 -52 25 -90 47 -85 48 6 2 413 51 905 109 963 113 933 108 954
+                  169 13 34 -1 73 -36 99 l-27 20 -1038 -122 c-571 -67 -1049 -122 -1063 -123
+                  -34 -2 -275 116 -284 139 -5 13 0 23 17 36 25 19 2016 980 2122 1024 96 40
+                  170 53 275 48 52 -2 119 -12 149 -20z m-1112 -2001 c329 -157 619 -294 645
+                  -304 25 -11 84 -27 129 -36 106 -21 294 -14 384 14 33 10 328 150 656 310 327
+                  161 598 292 602 292 4 0 7 -247 7 -549 l0 -549 -71 -76 c-220 -235 -538 -426
+                  -868 -521 -346 -99 -762 -104 -1101 -13 -200 53 -434 158 -596 266 -111 75
+                  -284 222 -346 295 l-48 56 0 550 c0 303 2 551 5 551 2 0 273 -129 602 -286z"/>
+                  </g>
+                  </svg>
+                </div>
+                <div class="timeline-end timeline-box">Graduate</div>
+                <hr />
+              </li>
+            </ul>
+            </div>
+        </div>
+        <div class="divider lg:divider-horizontal">AND</div>
+        <div class="card h-full py-16 bg-a rounded-box grid flex-1 place-items-center">
+            <h2 class="text-4xl lg:text-5xl text-b1 mb-8">Learning Curve</h2>
+              <div class="place-self-start">
+              <ul class="timeline timeline-vertical text-sm">
+            <li>
+              <div class="timeline-start">2025</div>
+              <div class="timeline-middle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="var(--b1)"
+                  class="h-5 w-5">
+                  <path
+                    fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
+                    clip-rule="evenodd" />
+                </svg>
+              </div>
+              <div class="timeline-end timeline-box">MBA</div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div class="timeline-start">2024</div>
+              <div class="timeline-middle">
+                <svg class="h-5 w-5" fill="var(--t)" width="32" height="32" viewBox="0 0 36 36" version="1.1"  preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path d="M28,30H6V8H19.22l2-2H6A2,2,0,0,0,4,8V30a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V15l-2,2Z" class="clr-i-outline clr-i-outline-path-1"></path><path d="M33.53,5.84,30.16,2.47a1.61,1.61,0,0,0-2.28,0L14.17,16.26l-1.11,4.81A1.61,1.61,0,0,0,14.63,23,1.69,1.69,0,0,0,15,23l4.85-1.07L33.53,8.12A1.61,1.61,0,0,0,33.53,5.84ZM18.81,20.08l-3.66.81L16,17.26,26.32,6.87l2.82,2.82ZM30.27,8.56,27.45,5.74,29,4.16,31.84,7Z" class="clr-i-outline clr-i-outline-path-2"></path>
+                  <rect x="0" y="0" width="32" height="32" fill-opacity="0"/>
+              </svg>
+              </div>
+              <div class="timeline-end timeline-box">PPC Ads, SEO</div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div class="timeline-start">2023</div>
+              <div class="timeline-middle">
+                <svg class="h-5 w-5" fill="var(--t)" width="32" height="32" viewBox="0 0 36 36" version="1.1"  preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <path d="M28,30H6V8H19.22l2-2H6A2,2,0,0,0,4,8V30a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V15l-2,2Z" class="clr-i-outline clr-i-outline-path-1"></path><path d="M33.53,5.84,30.16,2.47a1.61,1.61,0,0,0-2.28,0L14.17,16.26l-1.11,4.81A1.61,1.61,0,0,0,14.63,23,1.69,1.69,0,0,0,15,23l4.85-1.07L33.53,8.12A1.61,1.61,0,0,0,33.53,5.84ZM18.81,20.08l-3.66.81L16,17.26,26.32,6.87l2.82,2.82ZM30.27,8.56,27.45,5.74,29,4.16,31.84,7Z" class="clr-i-outline clr-i-outline-path-2"></path>
+                  <rect x="0" y="0" width="32" height="32" fill-opacity="0"/>
+              </svg>
+              </div>
+              <div class="timeline-end timeline-box">Social Listening</div>
+              <hr />
+            </li>
+            <li>
+              <hr />
+              <div class="timeline-start">2017</div>
+              <div class="timeline-middle">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512" preserveAspectRatio="xMidYMid meet"
+                class="h-5 w-5">
+
+                <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)"
+                fill="currentColor" stroke="none">
+                <path d="M2458 4499 c-37 -5 -102 -22 -145 -38 -108 -40 -2170 -1027 -2211
+                -1058 -50 -38 -90 -99 -98 -150 -16 -110 49 -193 222 -280 l114 -58 0 -466 0
+                -466 -48 -31 c-104 -67 -154 -196 -122 -312 16 -59 67 -129 115 -158 24 -15
+                45 -31 45 -36 0 -7 -243 -786 -257 -822 -4 -12 57 -14 367 -14 332 0 371 2
+                366 15 -16 42 -256 812 -256 822 0 6 13 16 29 22 96 41 164 200 132 316 -17
+                66 -66 133 -121 167 l-50 31 0 413 c0 228 3 414 7 414 4 0 74 -32 155 -72
+                l148 -71 0 -621 c0 -615 0 -621 21 -656 33 -54 254 -268 354 -342 300 -223
+                648 -364 1025 -415 152 -20 458 -20 610 0 382 52 720 189 1025 414 109 81 334
+                304 358 355 15 33 17 89 17 647 l0 612 365 179 c201 98 383 193 405 210 56 44
+                94 127 87 185 -9 62 -39 116 -86 156 -60 52 -2141 1065 -2236 1089 -90 23
+                -246 32 -337 19z m301 -204 c30 -9 446 -208 925 -442 479 -234 953 -466 1052
+                -514 100 -49 185 -96 188 -105 4 -10 -1 -25 -11 -37 -18 -20 -723 -372 -769
+                -383 -13 -3 -28 -12 -34 -19 -6 -7 -308 -157 -673 -333 -491 -238 -677 -323
+                -721 -331 -84 -15 -210 -13 -285 4 -42 10 -307 132 -765 352 -386 185 -744
+                356 -796 381 -52 25 -90 47 -85 48 6 2 413 51 905 109 963 113 933 108 954
+                169 13 34 -1 73 -36 99 l-27 20 -1038 -122 c-571 -67 -1049 -122 -1063 -123
+                -34 -2 -275 116 -284 139 -5 13 0 23 17 36 25 19 2016 980 2122 1024 96 40
+                170 53 275 48 52 -2 119 -12 149 -20z m-1112 -2001 c329 -157 619 -294 645
+                -304 25 -11 84 -27 129 -36 106 -21 294 -14 384 14 33 10 328 150 656 310 327
+                161 598 292 602 292 4 0 7 -247 7 -549 l0 -549 -71 -76 c-220 -235 -538 -426
+                -868 -521 -346 -99 -762 -104 -1101 -13 -200 53 -434 158 -596 266 -111 75
+                -284 222 -346 295 l-48 56 0 550 c0 303 2 551 5 551 2 0 273 -129 602 -286z"/>
+                </g>
+                </svg>
+              </div>
+              <div class="timeline-end timeline-box">Graduate</div>
+              <hr />
+            </li>
+              </ul>
+              </div>
+        </div>
     </div>
   </div>
 </section>
 
-  <!-- Services Section -->
-  <section class="py-16 bg-white">
-    <div class="container mx-auto px-6 md:px-12 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-8">Our Services</h2>
-      <div class="overflow-x-auto">
-        <table class="table text-xl">
-          <!-- head -->
-          <thead>
-            <tr>
-              <th></th>
-              <th>Name</th>
-              <th>Job</th>
-              <th>Favorite Color</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- row 1 -->
-            <tr class="hover">
-              <th>1</th>
-              <td>Cy Ganderton</td>
-              <td>Quality Control Specialist</td>
-              <td>Blue</td>
-            </tr>
-            <!-- row 2 -->
-            <tr class="hover">
-              <th>2</th>
-              <td>Hart Hagerty</td>
-              <td>Desktop Support Technician</td>
-              <td>Purple</td>
-            </tr>
-            <!-- row 3 -->
-            <tr class="hover">
-              <th>3</th>
-              <td>Brice Swyre</td>
-              <td>Tax Accountant</td>
-              <td>Red</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-<!-- Portfolio Section -->
+<!-- Portfolio -->
+<a name="portfolio"></a>
 <section class="py-16 bg-gray-100">
     <div class="container mx-auto px-6 md:px-12 text-center">
-      <h2 class="text-3xl md:text-4xl font-bold mb-8">Our Portfolio</h2>
-      <p class="text-gray-600 mb-12">Take a look at some of our creative works that we are proud to showcase.</p>
+      <h2 class="text-4xl lg:text-5xl">Portfolio</h2>
+      <p class="py-6">
+        Take a look at some of our creative works that we are proud to showcase.
+      </p>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <!-- Portfolio Item 1 -->
-        <div class="card bg-base-100 w-96 shadow-xl">
+        <div class="card shadow-md">
           <figure>
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-              alt="Shoes" />
+            <img src="images/tiktok-trauma-code.png" />
           </figure>
-          <div class="card-body">
-            <h2 class="card-title">
-              Shoes!
-              <div class="badge badge-secondary">NEW</div>
-            </h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-body text-left">
+            <h6 class="card-title ">
+              Tiktok - Trauma Code
+            </h6>
+            <p>Realtime marketing results 25,000 views + 2,500 ♡ in one night</p>
             <div class="card-actions justify-end">
-              <div class="badge badge-outline">Fashion</div>
-              <div class="badge badge-outline">Products</div>
+              <div class="badge badge-s">Tiktok</div>
+              <div class="badge badge-s">Realtime Marketing</div>
+              <div class="badge badge-p linkout"><a href="https://www.tiktok.com/@bangkok_hospital/video/7468610413282774293" target="_blank">
+                Watch Live</a>
+              </div>
             </div>
           </div>
         </div>
         <!-- Portfolio Item 2 -->
-        <div class="card bg-base-100 w-96 shadow-xl">
+        <div class="card shadow-md">
           <figure>
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-              alt="Shoes" />
+            <img src="images/Supermed2025.png" />
           </figure>
-          <div class="card-body">
-            <h2 class="card-title">
-              Shoes!
-              <div class="badge badge-secondary">NEW</div>
-            </h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-body text-left">
+            <h6 class="card-title ">
+              SuperMED
+            </h6>
+            <p>A mission to rescue a super-tertiary healthcare from its too high reputation</p>
             <div class="card-actions justify-end">
-              <div class="badge badge-outline">Fashion</div>
-              <div class="badge badge-outline">Products</div>
+              <div class="badge badge-s">Landing Page</div>
+              <div class="badge badge-s">Video Production</div>
+              <div class="badge badge-s">PPC</div>
+              <div class="badge badge-p linkout"><a href="https://www.bangkokhospital.com/campaign/supermed" target="_blank">
+                Watch Live</a>
+              </div>
             </div>
           </div>
         </div>
         <!-- Portfolio Item 3 -->
-        <div class="card bg-base-100 w-96 shadow-xl">
+        <div class="card shadow-md">
           <figure>
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-              alt="Shoes" />
+            <img src="images/HPV-Campaign.png" />
           </figure>
-          <div class="card-body">
-            <h2 class="card-title">
-              Shoes!
-              <div class="badge badge-secondary">NEW</div>
-            </h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-body text-left">
+            <h6 class="card-title ">
+              HPV self-test kit
+            </h6>
+            <p>The first phisical product from Bangkok Hospital HQ</p>
             <div class="card-actions justify-end">
-              <div class="badge badge-outline">Fashion</div>
-              <div class="badge badge-outline">Products</div>
+              <div class="badge badge-s">Landing Page</div>
+              <div class="badge badge-s">KV</div>
+              <div class="badge badge-s">Influencer</div>
+              <div class="badge badge-s">SEO</div>
+              <div class="badge badge-p linkout"><a href="https://www.wattanosothcancerhospital.com/campaign/hpv-atk" target="_blank">
+                Watch Live</a>
+              </div>
             </div>
           </div>
         </div>
         <!-- Portfolio Item 4 -->
-        <div class="card bg-base-100 w-96 shadow-xl">
+        <div class="card shadow-md">
           <figure>
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-              alt="Shoes" />
+            <img src="images/jaspal-home.jpg" />
           </figure>
-          <div class="card-body">
-            <h2 class="card-title">
-              Shoes!
-              <div class="badge badge-secondary">NEW</div>
-            </h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-body text-left">
+            <h6 class="card-title ">
+              Jaspal Home Online Store
+            </h6>
+            <p>E-Commerce Debut - rescue revenue during the pandemic</p>
             <div class="card-actions justify-end">
-              <div class="badge badge-outline">Fashion</div>
-              <div class="badge badge-outline">Products</div>
+              <div class="badge badge-s">brand dot com</div>
+              <div class="badge badge-s">Virtual Marchandising</div>
+              <div class="badge badge-s">PPC</div>
             </div>
           </div>
         </div>
         <!-- Portfolio Item 5 -->
-        <div class="card bg-base-100 w-96 shadow-xl">
+        <div class="card shadow-md">
           <figure>
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-              alt="Shoes" />
+            <img src="images/jaspal-home.jpg" />
           </figure>
-          <div class="card-body">
-            <h2 class="card-title">
-              Shoes!
-              <div class="badge badge-secondary">NEW</div>
-            </h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-body text-left">
+            <h6 class="card-title ">
+              Jaspal Home Online Store
+            </h6>
+            <p>E-Commerce Debut - rescue revenue during the pandemic</p>
             <div class="card-actions justify-end">
-              <div class="badge badge-outline">Fashion</div>
-              <div class="badge badge-outline">Products</div>
+              <div class="badge badge-s">brand dot com</div>
+              <div class="badge badge-s">Virtual Marchandising</div>
+              <div class="badge badge-s">PPC</div>
             </div>
           </div>
         </div>
         <!-- Portfolio Item 6 -->
-        <div class="card bg-base-100 w-96 shadow-xl">
+        <div class="card shadow-md">
           <figure>
-            <img
-              src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-              alt="Shoes" />
+            <img src="images/jaspal-home.jpg" />
           </figure>
-          <div class="card-body">
-            <h2 class="card-title">
-              Shoes!
-              <div class="badge badge-secondary">NEW</div>
-            </h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+          <div class="card-body text-left">
+            <h6 class="card-title ">
+              Jaspal Home Online Store
+            </h6>
+            <p>E-Commerce Debut - rescue revenue during the pandemic</p>
             <div class="card-actions justify-end">
-              <div class="badge badge-outline">Fashion</div>
-              <div class="badge badge-outline">Products</div>
+              <div class="badge badge-s">brand dot com</div>
+              <div class="badge badge-s">Virtual Marchandising</div>
+              <div class="badge badge-s">PPC</div>
             </div>
           </div>
         </div>
+        
+
       </div>
     </div>
   </section>
@@ -524,18 +633,22 @@
 
   <!-- Footer -->
   <!-- Footer Section -->
-<footer class="bg-gray-800 text-white py-8">
+<footer class="bg-a text-b1 py-8">
     <div class="container mx-auto px-6 md:px-12 text-center">
-      <p class="mb-4">© 2025 Orido. All rights reserved.</p>
-      <nav class="flex justify-center space-x-6">
-        <a href="#" class="text-gray-400 hover:text-white">Home</a>
-        <a href="#" class="text-gray-400 hover:text-white">About</a>
-        <a href="#" class="text-gray-400 hover:text-white">Portfolio</a>
-        <a href="#" class="text-gray-400 hover:text-white">Blog</a>
-        <a href="#" class="text-gray-400 hover:text-white">Contact</a>
+      <p class="mb-4">&copy; <span id="year"></span> Pattarasaya</p>
+      <nav class="flex justify-center space-x-6 text-xs md:text-sm">
+        <a href="#home" class="text-b1 no-underline hover:underline">Home</a>
+        <a href="#about" class="text-b1 hover:text-white">About</a>
+        <a href="#expertise" class="text-b1 hover:text-white">Expertise</a>
+        <a href="#portfolio" class="text-b1 hover:text-white">Portfolio</a>
+        <a href="#contact" class="text-b1 hover:text-white">Contact</a>
       </nav>
     </div>
   </footer>
-  
+
+  <script>
+    init();
+  </script>
+
 </body>
 </html>
