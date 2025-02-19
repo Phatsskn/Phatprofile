@@ -1,7 +1,7 @@
 function renderYearExp(){
     const date = new Date();
     const year = date.getFullYear();
-    const yearExp = year - 2017;
+    const yearExp = year - 2019;
     document.getElementById("year-exp").innerHTML = yearExp;
 }
 
