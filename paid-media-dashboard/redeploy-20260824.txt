@@ -1,0 +1,1 @@
+Force redeploy after restoring full Google Ads detail on 2026-08-24.
